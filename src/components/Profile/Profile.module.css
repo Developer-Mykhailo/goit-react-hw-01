@@ -1,0 +1,72 @@
+.card {
+  border: 3px solid #252525;
+  border-radius: 16px;
+  width: 530px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  overflow: hidden;
+}
+
+.userData {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 43px;
+}
+
+.avatar {
+  border-radius: 50%;
+  background-color: #2a2a2a;
+  width: 200px;
+  margin-bottom: 35px;
+}
+
+.boldText {
+  font-weight: 700;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.lightText {
+  color: #818181;
+  font-size: 36px;
+}
+
+.boldText + .lightText {
+  margin-bottom: 12px;
+}
+
+/*  */
+
+.statsList {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.statsItem {
+  width: calc((100% / 3));
+  padding: 30px 0;
+  background-color: #d3d3d3;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 14px;
+  border-top: 3px solid #878787;
+}
+
+.statsItem + .statsItem {
+  border-left: 3px solid #878787;
+}
+
+.statsItem span {
+  font-size: 30px;
+}
+
+.statsItem span:last-child {
+  font-weight: 700;
+}

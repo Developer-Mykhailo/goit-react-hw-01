@@ -1,3 +1,6 @@
+// import clsx from "clsx";
+import s from "./Profile.module.css";
+
 const Profile = ({
   username,
   tag,
@@ -6,29 +9,29 @@ const Profile = ({
   stats: { followers, views, likes },
 }) => {
   return (
-    <>
-      <div>
-        <img src={avatar} alt={tag} />
-        <p>{username}</p>
-        <p>@{tag}</p>
-        <p>{location}</p>
+    <div className={s.card}>
+      <div className={s.userData}>
+        <img className={s.avatar} src={avatar} alt={tag} />
+        <p className={s.boldText}>{username}</p>
+        <p className={s.lightText}>@{tag}</p>
+        <p className={s.lightText}>{location}</p>
       </div>
 
-      <ul>
-        <li>
+      <ul className={s.statsList}>
+        <li className={s.statsItem}>
           <span>Followers</span>
           <span>{followers}</span>
         </li>
-        <li>
+        <li className={s.statsItem}>
           <span>Views</span>
           <span>{views}</span>
         </li>
-        <li>
+        <li className={s.statsItem}>
           <span>Likes</span>
           <span>{likes}</span>
         </li>
       </ul>
-    </>
+    </div>
   );
 };
 
