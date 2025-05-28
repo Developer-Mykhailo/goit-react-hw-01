@@ -22,3 +22,7 @@
 .offline {
   color: #ff2b29;
 }
+
+.temp {
+  width: 0;
+}
